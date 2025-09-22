@@ -1,13 +1,20 @@
 package com.lostandfound.lostfound_backend.controller;
 
-import com.lostandfound.dto.*;
-import com.lostandfound.entity.User;
-import com.lostandfound.repository.UserRepository;
-import com.lostandfound.config.JwtUtil;
+import com.lostandfound.lostfound_backend.dto.AuthRequest;
+import com.lostandfound.lostfound_backend.dto.AuthResponse;
+import com.lostandfound.lostfound_backend.entity.User;
+import com.lostandfound.lostfound_backend.repository.UserRepository;
+import com.lostandfound.lostfound_backend.config.JwtUtil;
+
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.*;
+
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")

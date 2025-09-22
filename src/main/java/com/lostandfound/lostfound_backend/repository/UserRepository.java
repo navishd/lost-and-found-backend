@@ -1,6 +1,6 @@
 package com.lostandfound.lostfound_backend.repository;
 
-import com.lostandfound.entity.User;
+import com.lostandfound.lostfound_backend.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
