@@ -1,7 +1,7 @@
 package com.lostandfound.lostfound_backend.controller;
 
-import com.lostandfound.entity.Request;
-import com.lostandfound.repository.RequestRepository;
+import com.lostandfound.lostfound_backend.entity.Request;
+import com.lostandfound.lostfound_backend.repository.RequestRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
