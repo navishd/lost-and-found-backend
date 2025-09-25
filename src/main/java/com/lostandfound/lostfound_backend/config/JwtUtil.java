@@ -22,4 +22,14 @@ public class JwtUtil {
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
                 .compact();
     }
+
+    public String extractUsername(String token) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'extractUsername'");
+    }
+
+    public boolean validateToken(String token, UserDetails userDetails) {
+      // TODO Auto-generated method stub
+      throw new UnsupportedOperationException("Unimplemented method 'validateToken'");
+    }
 }
